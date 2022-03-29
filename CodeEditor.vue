@@ -100,6 +100,7 @@
 import hljs from "highlight.js";
 import Dropdown from "./Dropdown.vue";
 import CopyCode from "./CopyCode.vue";
+
 export default {
   components: {
     Dropdown,
@@ -324,6 +325,7 @@ export default {
   top: 10px;
   right: 12px;
 }
+
 /* code_area */
 .code_editor {
   display: flex;
@@ -377,6 +379,7 @@ export default {
   border: none;
   margin: 0;
 }
+
 /* hide_header */
 .hide_header > .code_area > textarea,
 .hide_header > .code_area > pre > code {
@@ -385,18 +388,21 @@ export default {
 .hide_header.scroll > .code_area {
   height: 100%;
 }
+
 /* read_only */
 .read_only > .code_area > pre > code {
   width: 100%;
   height: 100%;
   overflow: auto !important;
 }
+
 /* wrap code */
 .wrap_code > .code_area > textarea,
 .wrap_code > .code_area > pre > code {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 /* scroll */
 .scroll > .code_area {
   height: calc(100% - 34px);
@@ -409,6 +415,7 @@ export default {
   height: 100%;
   overflow: hidden;
 }
+
 /* dropdown */
 .panel {
   user-select: none;
